@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Sistema</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="">REGALUM</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+      
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alumnos</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="consultar.php">Consultar Alumnos</a>
+       
+            </div>
+          </li>
+        </ul>
+       
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron ">
+        <div class="container">
+          <h1 class="display-3">REGALUM </h1>
+         <p>Es un sistema WEB interactivo, para el registro de alumnos.
+         
+          </p>
+        </div>
+      </div>
+
+      <hr class="featuretted-divider">
+
+
+         
+            <div class="container ">
+          
+               <h1>  <center> Registrar Alumno</center></h1>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="container">
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Datos Requeridos</h4>
+          <form  action="registrar.php" method="POST" >
+
+             <div class="mb-3">
+              <label for="username">Matrícula</label>
+              
+                <input name="MAT" type="text" class="form-control" id="username" placeholder="" required>
+            
+              </div>
+        
+
+              <div class="mb-3">
+              <label for="apellido1">Apellido <span class="text-muted">Paterno</span>:</label>
+              
+                <input name="APA" type="text" class="form-control" id="apellido1" placeholder="" required>
+            
+              </div>
+
+              <div class="mb-3">
+              <label for="apellido2">Apellido <span class="text-muted">Materno</span>:</label>
+              
+                <input name="AMA" type="text" class="form-control" id="apellido2" placeholder="" required>
+            
+              </div>
+
+              <div class="mb-3">
+              <label for="nombre">Nombre(s):</label>
+              
+                <input name="NOM" type="text" class="form-control" id="nombre" placeholder="" required>
+            
+              </div>
+
+           
+
+            <div class="col-md-8 order-md-1">
+            <h4 class="mb-3">Datos Opcionales</h4>
+            <div class="row">
+               <div class="col-md-6 mb-3">
+
+              <label for="email">Email </label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+              
+              </div>
+              <input name="EMA" type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" style="width:60%">
+               
+              </div>
+            </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input name="TEL" type="text" class="form-control" id="lastName" placeholder="" value="" >
+
+              </div>
+            <div class="container">
+            <button type="submit" class="btn btn-secondary" style="width:150px; " value="" action="registrar.php">Registrar</button>
+            </div>
+
+            </form>
+            </div>
+
+        
+            
+          </div>
+
+
+            <hr class="feattureted-divider">
+    <footer class="container">
+      <p>&copy; InnTech Mx 2017-2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
